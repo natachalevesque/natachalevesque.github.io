@@ -1,13 +1,12 @@
 import './App.css';
-import logo from './logo.png';
-import PostBox from './PostBox';
+import PostList from './PostList';
 import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
         <Navbar/>
-        <PostBox/>
+        <PostList/>
     </div>
   );
 }

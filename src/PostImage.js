@@ -1,9 +1,8 @@
-import apod from './apod.jpeg';
 import './PostImage.css';
 
-function PostImage() {
+function PostImage({ nasaDataImage }) {
     return(
-        <img className={"PostImage"} src={apod} alt="Drawing of a UFO over a mountain"/>
+        <img className={"PostImage"} src={nasaDataImage} alt="Drawing of a UFO over a mountain"/>
     )
 }
 

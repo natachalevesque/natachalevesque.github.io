@@ -13,3 +13,9 @@ h5 {
     margin: .5rem 0 2rem 0;
     color: #676767;
 }
+
+.Navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
