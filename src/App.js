@@ -1,9 +1,13 @@
 import './App.css';
+import logo from './logo.png';
+import PostBox from './PostBox';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Spacestagram</h1>
+        <Navbar/>
+        <PostBox/>
     </div>
   );
 }
