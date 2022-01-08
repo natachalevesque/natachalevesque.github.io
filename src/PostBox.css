@@ -1,7 +1,7 @@
 .PostBox {
     background: #e6e6e6;
     border-radius: .5rem;
-    margin: .01rem;
+    margin: 1.5rem;
     padding: .5rem;
     display: flex;
     flex-direction: column;
