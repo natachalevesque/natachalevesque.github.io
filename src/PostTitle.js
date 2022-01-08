@@ -1,6 +1,5 @@
-
 function PostTitle() {
-    return(
+    return (
         <title>Post Title</title>
     )
 }

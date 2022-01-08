@@ -1,10 +1,13 @@
 .PostBox {
     background: #e6e6e6;
     border-radius: .5rem;
-    margin: 1.5rem;
-    padding: .5rem;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+.PostBoxPadding {
+    margin: 1rem;
 }
 
 @media (min-width: 1025px) {
