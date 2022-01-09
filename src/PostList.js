@@ -6,7 +6,6 @@ import './PostList.css'
 function PostList() {
 
     const nasaData = useAPI([])
-    console.log(nasaData)
 
     const postBoxes = nasaData.map(( nasaPostData, i ) => {
         return (<PostBox nasaPostData={nasaPostData} key={i}/>)
