@@ -2996,7 +2996,7 @@
   dependencies:
     "cssnano" "^5.0.6"
     "jest-worker" "^27.0.2"
-    "postcss" "^8.3.5"
+    "postcss" "^8.2.13"
     "schema-utils" "^4.0.0"
     "serialize-javascript" "^6.0.0"
     "source-map" "^0.6.1"
@@ -7068,7 +7068,7 @@
     "jest-resolve" "^27.4.2"
     "jest-watch-typeahead" "^1.0.0"
     "mini-css-extract-plugin" "^2.4.5"
-    "postcss" "^8.4.4"
+    "postcss" "^8.2.13"
     "postcss-flexbugs-fixes" "^5.0.2"
     "postcss-loader" "^6.2.1"
     "postcss-normalize" "^10.0.1"
@@ -7258,7 +7258,7 @@
     "adjust-sourcemap-loader" "^4.0.0"
     "convert-source-map" "^1.7.0"
     "loader-utils" "^2.0.0"
-    "postcss" "^7.0.35"
+    "postcss" "^8.2.13"
     "source-map" "0.6.1"
 
 "resolve.exports@^1.1.0":
