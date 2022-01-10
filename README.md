@@ -1,6 +1,6 @@
 # Spacestagram
 
-- Gets the Astronomy Picture of the Day (APOD) from the APOD APi @ https://api.nasa.gov
+- Gets the Astronomy Picture of the Day (APOD) from the APOD API @ https://api.nasa.gov
 
 Features
 ========
