@@ -1,4 +1,4 @@
-import './PostBox.css';
+import '../css/PostBox.css';
 import PostMedia from './PostMedia';
 import PostDescription from './PostDescription';
 import LikeButton from './LikeButton';

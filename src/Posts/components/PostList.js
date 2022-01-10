@@ -1,7 +1,7 @@
-import './PostList.css'
-import PostBox from './PostBox';
-import useAPI from './useAPI';
-import useLastPostObserver from "./useLastPostObserver";
+import '../css/PostList.css'
+import PostBox from '../../Post/components/PostBox';
+import useAPI from '../../Main/hooks/useAPI.js';
+import useLastPostObserver from '../hooks/useLastPostObserver';
 import {useState} from 'react'
 import {subDays} from "date-fns";
 

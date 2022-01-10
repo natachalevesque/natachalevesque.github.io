@@ -22,5 +22,5 @@
 
 div {
     border-radius: .5rem .5rem 0 0;
-    overflow: auto;
+    overflow: hidden;
 }

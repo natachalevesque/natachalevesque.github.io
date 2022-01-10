@@ -7,8 +7,16 @@
 
 .Title {
     margin: 1rem 0 .5rem 0;
+    color: #222222;
 }
 
 .Paragraph {
     margin: .5rem 0 1rem 0;
+}
+
+.ReadMore {
+    border: none;
+    background: none;
+    padding: 0;
+    color: #0095f6;
 }

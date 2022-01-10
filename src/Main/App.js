@@ -1,6 +1,5 @@
-import './App.css';
-import PostList from './PostList';
-import Navbar from './Navbar';
+import PostList from '../Posts/components/PostList';
+import Navbar from '../Menus/components/Navbar';
 
 function App() {
     return (

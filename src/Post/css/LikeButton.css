@@ -1,6 +1,7 @@
 .LikeButton {
     width: fit-content;
     font-family: Sfuidisplay, sans-serif;
+    color: #222222;
     border-color: #d4d4d4;
     border-width: thin;
     border-radius: .25rem;

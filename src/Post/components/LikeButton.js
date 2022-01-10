@@ -1,4 +1,4 @@
-import './LikeButton.css';
+import '../css/LikeButton.css';
 import {useState} from 'react';
 
 function LikeButton({className}) {
