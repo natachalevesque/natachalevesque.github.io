@@ -1,19 +1,36 @@
+import './PostList.css'
 import PostBox from './PostBox';
 import useAPI from './useAPI';
-
-import './PostList.css'
+import useLastPostObserver from "./useLastPostObserver";
+import {useState} from 'react'
+import {subDays} from "date-fns";
 
 function PostList() {
 
-    const nasaData = useAPI([])
+    const [dateRange, setDateRange] = useState({
+        'endDate': new Date(),
+        'startDate': subDays(new Date(), 2)
+    })
 
-    const postBoxes = nasaData.map(( nasaPostData, i ) => {
-        return (<PostBox nasaPostData={nasaPostData} key={i}/>)
+    const nasaData = useAPI(dateRange)
+    const [loadedImages, setLoadedImages] = useState([])
+
+    function onReady(url) {
+        setLoadedImages(prevLoadedImages => [...prevLoadedImages, url])
+    }
+
+    const lastPostElementRef = useLastPostObserver(dateRange, setDateRange, nasaData.length !== loadedImages.length)
+
+
+    const postBoxes = nasaData.map((nasaPostData, i) => {
+        return (<PostBox nasaPostData={nasaPostData} onReady={onReady} key={nasaPostData.url}
+                         ref={i === nasaData.length - 1 ? lastPostElementRef : undefined}/>)
     });
 
-    return(
+
+    return (
         <div className={"PostList"}>
-            {postBoxes.reverse()}
+            {postBoxes}
         </div>
     )
 }

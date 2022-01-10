@@ -1,8 +1,8 @@
 import './PostImage.css';
 
-function PostImage({nasaDataImage}) {
+function PostImage({nasaDataImage, onReady}) {
     return (
-        <img className={"PostImage"} src={nasaDataImage} alt="See Description."/>
+        <img className={"PostImage"} src={nasaDataImage} alt="See Description." onLoad={onReady}/>
     )
 }
 
