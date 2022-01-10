@@ -12,7 +12,7 @@ function useAPI(dateRange) {
 
         const APIKEY = process.env.REACT_APP_NASA_API_KEY
 
-        fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}&start_date=${formattedStartDate}&end_date=${formattedEndDate}`)
+        fetch(`https://api.nasa.gov/planetary/apod?api_key=${APIKEY}&start_date=${formattedStartDate}&end_date=${formattedEndDate}&thumbs=True`)
             .then(response => response.json())
             .then(json => {
                 setNasaData(prevNasaData => {

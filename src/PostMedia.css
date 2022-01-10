@@ -1,0 +1,26 @@
+.PostImage {
+    margin-bottom: -.5rem;
+    width: 100%;
+}
+
+.PostVideo {
+    border: none;
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .PostVideo {
+        height: 25em;
+    }
+}
+
+@media (max-width: 500px) {
+    .PostVideo {
+        height: 15em;
+    }
+}
+
+div {
+    border-radius: .5rem .5rem 0 0;
+    overflow: auto;
+}
